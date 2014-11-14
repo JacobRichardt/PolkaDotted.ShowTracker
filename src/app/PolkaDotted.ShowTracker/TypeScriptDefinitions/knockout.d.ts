@@ -355,7 +355,7 @@ interface KnockoutTemplateSources {
 // nativeTemplateEngine.js
 //////////////////////////////////
 
-interface KnockoutNativeTemplateEngine {
+interface KnockoutNativeTemplateEngine extends KnockoutTemplateEngine {
 
     renderTemplateSource(templateSource: Object, bindingContext?: KnockoutBindingContext, options?: Object): any[];
 }
@@ -364,7 +364,7 @@ interface KnockoutNativeTemplateEngine {
 // templateEngine.js
 //////////////////////////////////
 
-interface KnockoutTemplateEngine extends KnockoutNativeTemplateEngine {
+interface KnockoutTemplateEngine {
 
     createJavaScriptEvaluatorBlock(script: string): string;
 

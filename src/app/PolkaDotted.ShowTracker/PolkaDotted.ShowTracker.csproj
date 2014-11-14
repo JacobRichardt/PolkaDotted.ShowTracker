@@ -19,7 +19,6 @@
   <ItemGroup>
     <Content Include="default.htm" />
     <Content Include="Styles\Default.css" />
-    <Content Include="View\Shell.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -32,9 +31,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="App\Main.ts" />
+    <TypeScriptCompile Include="App\SimpleExternalTemplates.ts" />
     <TypeScriptCompile Include="App\ViewModels\Shell.ts" />
     <TypeScriptCompile Include="TypeScriptDefinitions\bootstrap.d.ts" />
     <TypeScriptCompile Include="TypeScriptDefinitions\facebook.d.ts" />
